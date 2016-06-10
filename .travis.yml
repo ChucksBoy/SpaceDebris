@@ -1,0 +1,14 @@
+language: android
+android:
+  components:
+    - build-tools-23.0.1
+    - android-23
+jdk: oraclejdk8
+
+cache:
+  directories:
+  - $HOME/.gradle/wrapper
+  - $HOME/.gradle/caches/modules-2/files-2.1
+
+before_install:
+- chmod +x gradlew
